@@ -6,14 +6,13 @@
 成功注册之后，你将会得到一个 client ID 和一个 client secret，这个将被用于之后的实例化 Gitment。
 
 ### 第二步: 页面引入 Gitment 的静态资源文件
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-
-### 第三步: 部署 Gitment
-在你要添加Gitment的页面位置添加以下代码
 <div id="container"></div>
 <link rel="stylesheet" href="https://raw.githubusercontent.com/JimHans/gitment-CN/master/gitment.css">
 <script src="https://raw.githubusercontent.com/JimHans/gitment-CN/master/gitment.js"></script>
+
+### 第三步: 部署 Gitment
+在你要添加Gitment的页面位置添加以下代码
+
 <script>
 var gitment = new Gitment({  
   id: '页面 ID', // 可选。默认为 location.href  
