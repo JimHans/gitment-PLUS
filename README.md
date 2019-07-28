@@ -7,13 +7,13 @@
 
 ### 第二步: 页面引入 Gitment 的静态资源文件
 ```html
-<div id="container"></div>
 <link rel="stylesheet" href="https://raw.githubusercontent.com/JimHans/gitment-CN/master/gitment.css">
 <script src="https://raw.githubusercontent.com/JimHans/gitment-CN/master/gitment.js"></script>
 ```
 ### 第三步: 部署 Gitment
 在你要添加Gitment的页面位置添加以下代码
  ```javascript
+ <div id="container"></div>
 <script>
 var gitment = new Gitment({  
   id: '页面 ID', // 可选。默认为 location.href  
@@ -25,7 +25,7 @@ var gitment = new Gitment({
   },})gitment.render('container')</script>
 ```
 注意：
-1.gitment.render()这个方法的参数就是你的评论区域 div 的 id 名;
-2.页面 ID 如果不写，默认为 location.href。
+##### 1.gitment.render()这个方法的参数就是你的评论区域 div 的 id 名;
+##### 2.页面 ID 如果不写，默认为 location.href。
 
 
